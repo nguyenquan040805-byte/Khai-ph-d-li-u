@@ -33,7 +33,7 @@ else:
 import streamlit as st
 # import chromadb
 # from chromadb.utils import embedding_functions
-import google.generativeai as genai
+# import google.generativeai as genai
 
 # ================== CẤU HÌNH ==================
 COLLECTION_NAME = "TTHC_rag"
