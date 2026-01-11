@@ -31,7 +31,7 @@ else:
 
 
 import streamlit as st
-import chromadb
+# import chromadb
 from chromadb.utils import embedding_functions
 import google.generativeai as genai
 
