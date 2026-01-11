@@ -9,13 +9,13 @@ Original file is located at
 
 #pip install -q streamlit pyngrok chromadb google-generativeai sentence-transformers
 
-from pyngrok import ngrok
-ngrok.kill()
+#from pyngrok import ngrok
+#ngrok.kill()
 
-from pyngrok import ngrok
+#from pyngrok import ngrok
 
 # 🔴 DÁN AUTHTOKEN NGROK CỦA BẠN VÀO ĐÂY
-ngrok.set_auth_token("37yCte3FbdYw4EUVaT6Ybq0JA8i_685ddwYPK6991hA5mSxow")
+#ngrok.set_auth_token("37yCte3FbdYw4EUVaT6Ybq0JA8i_685ddwYPK6991hA5mSxow")
 
 from google.colab import drive
 import os
