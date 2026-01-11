@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1zjlTxPIjRz1_DNCxjifXUSzKPJkdz_e-
 """
 
-!pip install -q streamlit pyngrok chromadb google-generativeai sentence-transformers
+pip install -q streamlit pyngrok chromadb google-generativeai sentence-transformers
 
 from pyngrok import ngrok
 ngrok.kill()
