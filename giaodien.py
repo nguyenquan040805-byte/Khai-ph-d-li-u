@@ -17,11 +17,11 @@ Original file is located at
 # 🔴 DÁN AUTHTOKEN NGROK CỦA BẠN VÀO ĐÂY
 #ngrok.set_auth_token("37yCte3FbdYw4EUVaT6Ybq0JA8i_685ddwYPK6991hA5mSxow")
 
-from google.colab import drive
+# from google.colab import drive
 import os
 
 # Mount trực tiếp, không cần xóa thủ công
-drive.mount('/content/drive', force_remount=True)
+# drive.mount('/content/drive', force_remount=True)
 CHROMA_PATH = "/content/drive/MyDrive/my_chroma_db"
 if os.path.exists(CHROMA_PATH):
     print("✅ Đã kết nối Drive. Thư mục Chroma TỒN TẠI.")
