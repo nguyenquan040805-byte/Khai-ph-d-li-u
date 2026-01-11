@@ -247,7 +247,7 @@ print("Danh sách Collection hiện có:", client.list_collections())
 # Dùng print để xem kết quả trong Notebook
 print(f"Số lượng tài liệu đang có trong Database: {collection.count()}")
 
-!streamlit run app.py &>/content/logs.txt &
+
 
 public_url = ngrok.connect(8501)
 print("🌐 LINK CHATBOT:", public_url)
