@@ -49,7 +49,7 @@ LIST_KEYS = [
 # Tự động chọn ngẫu nhiên 1 Key mỗi khi chạy lại giao diện
 API_KEY = random.choice(LIST_KEYS)
 
-genai.configure(api_key=API_KEY)
+# genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
  # ================== CHROMA ==================
