@@ -53,7 +53,7 @@ API_KEY = random.choice(LIST_KEYS)
 # model = genai.GenerativeModel("gemini-2.5-flash")
 
  # ================== CHROMA ==================
-embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+# embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
     model_name=EMBEDDING_MODEL
 )
 
