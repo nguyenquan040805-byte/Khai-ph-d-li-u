@@ -7,21 +7,21 @@ Original file is located at
     https://colab.research.google.com/drive/1zjlTxPIjRz1_DNCxjifXUSzKPJkdz_e-
 """
 
-#pip install -q streamlit pyngrok chromadb google-generativeai sentence-transformers
+pip install -q streamlit pyngrok chromadb google-generativeai sentence-transformers
 
-#from pyngrok import ngrok
-#ngrok.kill()
+from pyngrok import ngrok
+ngrok.kill()
 
-#from pyngrok import ngrok
+from pyngrok import ngrok
 
 # 🔴 DÁN AUTHTOKEN NGROK CỦA BẠN VÀO ĐÂY
-#ngrok.set_auth_token("37yCte3FbdYw4EUVaT6Ybq0JA8i_685ddwYPK6991hA5mSxow")
+ngrok.set_auth_token("37yCte3FbdYw4EUVaT6Ybq0JA8i_685ddwYPK6991hA5mSxow")
 
-# from google.colab import drive
+from google.colab import drive
 import os
 
 # Mount trực tiếp, không cần xóa thủ công
-# drive.mount('/content/drive', force_remount=True)
+drive.mount('/content/drive', force_remount=True)
 CHROMA_PATH = "/content/drive/MyDrive/my_chroma_db"
 if os.path.exists(CHROMA_PATH):
     print("✅ Đã kết nối Drive. Thư mục Chroma TỒN TẠI.")
@@ -31,9 +31,9 @@ else:
 
 
 import streamlit as st
-# import chromadb
-# from chromadb.utils import embedding_functions
-# import google.generativeai as genai
+import chromadb
+from chromadb.utils import embedding_functions
+import google.generativeai as genai
 
 # ================== CẤU HÌNH ==================
 COLLECTION_NAME = "TTHC_rag"
@@ -49,11 +49,11 @@ LIST_KEYS = [
 # Tự động chọn ngẫu nhiên 1 Key mỗi khi chạy lại giao diện
 API_KEY = random.choice(LIST_KEYS)
 
-# genai.configure(api_key=API_KEY)
-# model = genai.GenerativeModel("gemini-2.5-flash")
+genai.configure(api_key=API_KEY)
+model = genai.GenerativeModel("gemini-2.5-flash")
 
  # ================== CHROMA ==================
-# embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
     model_name=EMBEDDING_MODEL
 )
 
