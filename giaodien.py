@@ -29,7 +29,7 @@ if os.path.exists(CHROMA_PATH):
 else:
     print("❌ Vẫn không thấy thư mục. Hãy kiểm tra lại tên 'chroma_db_persist' trên Drive gốc.")
 
-%%writefile app.py
+
 import streamlit as st
 import chromadb
 from chromadb.utils import embedding_functions
