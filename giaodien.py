@@ -50,7 +50,7 @@ LIST_KEYS = [
 API_KEY = random.choice(LIST_KEYS)
 
 # genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash")
+# model = genai.GenerativeModel("gemini-2.5-flash")
 
  # ================== CHROMA ==================
 embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
